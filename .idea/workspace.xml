@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="89939d88-6c5a-4e45-9727-381eee93d828" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/cat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/target_notebook.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +17,8 @@
       <file leaf-file-name="cat.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="409">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -36,7 +37,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="679" />
+    <option name="x" value="512" />
     <option name="y" value="23" />
     <option name="width" value="943" />
     <option name="height" value="931" />
@@ -119,8 +120,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="679" y="23" width="943" height="931" extended-state="0" />
-    <editor active="true" />
+    <frame x="512" y="23" width="943" height="931" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22587487" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -199,8 +199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="409">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
         </state>
       </provider>
     </entry>
