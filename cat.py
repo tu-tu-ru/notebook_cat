@@ -5,15 +5,22 @@ notebook1_str = notebook1.read()
 
 # Turn string to dictionary (json)
 notebook1_json = json.loads(notebook1_str)
-print(notebook1_json)
+#print(notebook1_json)
 
-cells1 = notebook1['cells']
+cells1 = notebook1_json['cells']
 
 notebook2 = open('to_add.ipynb')
 notebook2_str = notebook2.read()
-print(notebook2_str)
-cells2 = notebook2['cells']
+notebook2_json = json.loads(notebook2_str)
 
-target_cells = cells1 + cells2
+#print(notebook2_str)
+cells2 = notebook1_json['cells']
 
-print(target_cells)
+target_cells = cells1 + cells2 # json
+
+target_string = json.dumps(target_cells)
+
+target = open('target_notebook.ipynb', 'w')
+
+target.write(target_string)
+#print(target_cells)
