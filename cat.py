@@ -3,34 +3,28 @@ import json
 
 # accept argument
 
-notebook_path1 = sys.argv[1]  # path of notebook
-notebook_path2 = sys.argv[2]  #
+notebook_path_list = sys.argv[1:]  # path of notebook, using list slicing
+# TODO why start from 1
 
-
-# read notebook
-notebook1 = open(notebook_path1)
-notebook1_str = notebook1.read()
-
-# Turn string to dictionary (json)
-notebook1_json = json.loads(notebook1_str)
-
-cells1 = notebook1_json['cells']
-
-notebook2 = open(notebook_path2)
-notebook2_str = notebook2.read()
-notebook2_json = json.loads(notebook2_str)
-
-cells2 = notebook1_json['cells']
-
-del notebook1_json['cells']  # Remain the metadata (settings) of jupynb. aka delete the cells data.
-
-target_cells = cells1 + cells2  # cat the two json
+cells_list = []
 
 target_notebook = {}
 
-target_notebook['cells'] = target_cells  # Add elements to the dictionary
+# use for loop for all the notebooks
+for path in notebook_path_list:
+    notebook = open(path)
+    notebook_str = notebook.read()
+    notebook_json = json.loads(notebook_str)
+    cell_to_use = notebook_json['cells']
+    cells_list += cell_to_use
 
-target_notebook.update(notebook1_json)  # Add the settings in  notebook1_json to target_notebook
+target_notebook['cells'] = cells_list
+
+cells_for_metadata = json.loads(open(notebook_path_list[0]).read())
+
+del cells_for_metadata['cells']  # Remain the metadata (settings) of jupynb. aka delete the cells data.
+
+target_notebook.update(cells_for_metadata)  # Add the settings in  notebook1_json to target_notebook
 
 target_string = json.dumps(target_notebook)  # dumps() turn json into string
 
