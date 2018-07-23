@@ -18,12 +18,13 @@ target_notebook = {}
 
 # use for loop for all the notebooks
 for path in notebook_path_list:
-    notebook = open(path)
-    notebook_str = notebook.read()
-    notebook_json = json.loads(notebook_str)
-    cell_to_use = notebook_json['cells']
-    cells_list += cell_to_use
-    notebook.close()  # close the file after use
+    with open(path) as notebook:
+        # notebook = open(path)
+        notebook_str = notebook.read()
+        notebook_json = json.loads(notebook_str)
+        cell_to_use = notebook_json['cells']
+        cells_list += cell_to_use
+#        notebook.close()  # close the file after use
 
 target_notebook['cells'] = cells_list
 
