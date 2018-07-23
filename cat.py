@@ -1,6 +1,12 @@
 import sys
 import json
 
+# handle exception
+
+if len(sys.argv) < 3:
+    raise Exception('# of argv must be greater than 2.')
+
+
 # accept argument
 
 notebook_path_list = sys.argv[1:]  # path of notebook, using list slicing
@@ -17,10 +23,11 @@ for path in notebook_path_list:
     notebook_json = json.loads(notebook_str)
     cell_to_use = notebook_json['cells']
     cells_list += cell_to_use
+    notebook.close()  # close the file after use
 
 target_notebook['cells'] = cells_list
 
-cells_for_metadata = json.loads(open(notebook_path_list[0]).read())
+cells_for_metadata = json.loads(open(notebook_path_list[1]).read())
 
 del cells_for_metadata['cells']  # Remain the metadata (settings) of jupynb. aka delete the cells data.
 
