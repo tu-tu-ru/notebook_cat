@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="89939d88-6c5a-4e45-9727-381eee93d828" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/cat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target_notebook.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/target_notebook.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +16,11 @@
       <file leaf-file-name="cat.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,11 +123,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="512" y="23" width="943" height="931" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22587487" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.23101953" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32905483" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3381295" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
@@ -199,8 +202,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
